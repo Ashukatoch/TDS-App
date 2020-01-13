@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegistrationActivity"
+    android:background="@drawable/background_design"
+    android:gravity="center"
+    android:id="@+id/registrationouterlinearlayout">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:id="@+id/registrationinnerlinearlayout">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TDS APP"
+            android:fontFamily="@font/bitterbold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:id="@+id/appnametextview"
+            android:textColor="@android:color/white"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_emailedittext"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:hint="Email"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:paddingLeft="5dp"
+            android:fontFamily="@font/grenzeregular"
+            android:layout_margin="10dp"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/bttn_design"
+            android:textColorHint="@android:color/white"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_passwordedittext"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small.Inverse"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:textColor="@android:color/white"
+            android:hint="Password"
+            android:fontFamily="@font/grenzeregular"
+            android:background="@drawable/bttn_design"
+            android:inputType="numberPassword"
+            android:textColorHint="@android:color/white"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:id="@+id/reg_signupbutton"
+            android:text="Sign up"
+            android:textColor="@android:color/white"
+            android:background="@drawable/signupbutton_design"
+            android:fontFamily="@font/bitterbold"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:fontFamily="@font/grenzemedium"
+            android:layout_margin="10dp"
+            android:textColor="@android:color/white"
+            android:id="@+id/ortextview"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/reg_signinbutton"
+            android:background="@drawable/signupbutton_design"
+            android:text="Sign in"
+            android:fontFamily="@font/bitterbold"
+            android:textColor="@android:color/white"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+
+</LinearLayout>
